@@ -1,8 +1,9 @@
 import { defineConfig } from 'sanity'
 import { deskTool } from 'sanity/desk'
+import schemas from '@/sanity/schemas'
 
 export default defineConfig({
-  title: 'sanity-blog-part',
+  title: 'blog',
 
   projectId: 'bhts3xok',
   dataset: 'production',
@@ -11,4 +12,8 @@ export default defineConfig({
   basePath: '/admin',
 
   plugins: [deskTool()],
+
+  schema: {
+    types: schemas,
+  },
 })
