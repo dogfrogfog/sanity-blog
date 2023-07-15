@@ -8,7 +8,7 @@ export default async function Home() {
   console.log(projects);
 
   return (
-    <div className="container mx-auto p-10">
+    <>
       <h1 className="text-7xl font-extrabold">
         Hello I&apos;m{" "}
         <span className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">
@@ -43,6 +43,6 @@ export default async function Home() {
           </Link>
         ))}
       </div>
-    </div>
+    </>
   );
 }
