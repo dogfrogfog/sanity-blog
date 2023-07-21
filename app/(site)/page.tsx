@@ -5,8 +5,6 @@ import Link from "next/link";
 export default async function Home() {
   const projects = await getProjects();
 
-  console.log(projects);
-
   return (
     <>
       <h1 className="text-7xl font-extrabold">
@@ -46,3 +44,5 @@ export default async function Home() {
     </>
   );
 }
+
+export const revalidate = 60;
